@@ -1,24 +1,9 @@
 # README
+This is a project to make an easily accessible database of all course equivalencies across universties worldwide in order to make it easier for exchange students to choose the courses at their host universities and get them counted at their home universities.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The database is planned to be crowdsourced.  
 
-Things you may want to cover:
+The project is planned to be done in Ruby on Rails. 
 
-* Ruby version
+The data is planned to be stored in BSON in MongoDB.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
