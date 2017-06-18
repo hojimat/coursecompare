@@ -1,0 +1,19 @@
+version: '2'
+services:
+  db:
+    image: postgres:9.6.3
+		environment:
+			POSTGRES_USER: ravshan
+			POSTGRES_PASSWORD: Manas2038
+		ports:
+			- "5432:5432"
+  app:
+    build: .
+    command: bundle exec rails s -p 3000 -b '0.0.0.0'
+    volumes:
+      - .:/coursecompare
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+
