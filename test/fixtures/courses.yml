@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  std: 1
+  course: MyString
+  dept: MyString
+  code: 1
+
+two:
+  std: 1
+  course: MyString
+  dept: MyString
+  code: 1

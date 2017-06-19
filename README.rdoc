@@ -1,9 +1,0 @@
-== COURSECOMPARE
-
-This project aims at creating a comparison engine of course equivalencies among different universities in the world. This will help exchange students to choose courses at host universities easier and be sure that these courses will be accepted back at their home universities.  
-
-* The project is planned to be written in Ruby on Rails  
-
-* The database engine is PostgreSQL
-
-* The front-end is static HTML
