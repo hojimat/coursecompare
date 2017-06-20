@@ -1,4 +1,4 @@
-= Course Compare Engine 
+# Course Compare Engine 
 Introduction:  
   
 This project aims at creating a comprehensive course equivalence database and search engine among most of the world's universities. This will help exchange students to easily plan their schedule at host universities and be sure that these courses will be accepted back at their home universities. 
