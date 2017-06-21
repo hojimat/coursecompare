@@ -1,15 +1,16 @@
 <html>
-	<br/><br/><br/><br/><br/><br/><br/><br/>
-	<div><h1 align=center>CourseCompare.Com</h1></div>	
-	<div align=center> 
+	<div><h1 class=doodle>CourseCompare.Com</h1></div>	
+	<div class=query> 
 		<%= form_for :query do |f| %>
-			Home university: Host university: <br/><%= f.text_field :home %>
-			<%= f.text_field :host %><br/>
-			Department: <br/><%= f.text_field :dept %>	
-			<%= f.submit %>
+			<%= f.label :home, "Home University" %>
+			<%= f.text_field :home %>
+			<%= f.label :host, "Host University" %>
+			<%= f.text_field :host %>
+			<%= f.label :dept, "Department" %>
+			<%= f.text_field :dept %>	
+			<%= f.submit "Submit" %>
 		<% end %>
 	</div> 
-  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-	<div align=center> Powered by Bogazici University </div>
+	<div class=footer> Created by <a href="http://github.com/ravshansk">@ravshansk</a> </div>
 </html>
 
