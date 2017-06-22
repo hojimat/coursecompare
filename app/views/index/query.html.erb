@@ -1,13 +1,13 @@
 <html>
 	<div><h1 class=doodle>CourseCompare.Com</h1></div>	
 	<div class=query> 
-		<%= form_for :query do |f| %>
+		<%= form_for :results, url: results_path do |f| %>
 			<%= f.label :home, "Home University" %>
-			<%= f.text_field :home %>
+			<%= f.select :home, @schools %><br/>
 			<%= f.label :host, "Host University" %>
-			<%= f.text_field :host %>
+			<%= f.select :host, @schools %><br/>
 			<%= f.label :dept, "Department" %>
-			<%= f.text_field :dept %>	
+			<%= f.text_field :dept %>	<br/>
 			<%= f.submit "Submit" %>
 		<% end %>
 	</div> 
