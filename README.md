@@ -5,6 +5,6 @@ This project aims at creating a comprehensive course equivalence database and se
 * The development framework is Ruby 2.4.1 on Rails 5.1.1 
 * The running environment is Docker container on Debian  
 * The database engine is PostgreSQL 9.6.3
-* The note taking platform is Emacs Org Mode
+* The documentation platform is Emacs Org Mode
 ## Contribution: 
 Any bug reports, pull requests, comments or ideas are welcome at ravshansk@protonmail.com.
