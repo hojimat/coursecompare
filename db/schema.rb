@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170730110728) do
+ActiveRecord::Schema.define(version: 20170730202451) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,8 +23,6 @@ ActiveRecord::Schema.define(version: 20170730110728) do
     t.string "term"
     t.string "country"
     t.bigint "school_id"
-    t.bigint "dept_id"
-    t.index ["dept_id"], name: "index_courses_on_dept_id"
     t.index ["school_id"], name: "index_courses_on_school_id"
   end
 
@@ -49,7 +47,6 @@ ActiveRecord::Schema.define(version: 20170730110728) do
     t.datetime "updated_at", null: false
   end
 
-  add_foreign_key "courses", "depts"
   add_foreign_key "courses", "schools"
   add_foreign_key "depts", "schools"
 end
