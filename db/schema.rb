@@ -42,11 +42,6 @@ ActiveRecord::Schema.define(version: 20170730202451) do
     t.string "country"
   end
 
-  create_table "scrapers", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   add_foreign_key "courses", "schools"
   add_foreign_key "depts", "schools"
 end

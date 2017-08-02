@@ -1,8 +1,15 @@
 class IndexController < ApplicationController
-  def query
+	def query
 		@schools = School.pluck(:name,:id)
-  end
+		@depts = Dept.pluck(:name, :code)
+	end
+
 	def results
-		render :json => params
+	#	render :json => params
+		@params = params["results"]
+		@home = School.find_by(id:@params["home"])
+		@host = School.find_by(id:@params["host"])
+		@dept = Dept.find_by(code:@params["dept"])
+		
 	end
 end
